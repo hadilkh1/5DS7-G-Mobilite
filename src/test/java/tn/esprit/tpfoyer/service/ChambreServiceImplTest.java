@@ -30,9 +30,8 @@ class ChambreServiceImplTest {
     void testReserverChambreDisponible() {
         TypeChambre type = TypeChambre.SIMPLE;
 
-        // Réserver une chambre disponible
         Chambre chambreReservee = chambreService.reserverChambreDisponible(type);
-
+//
         // Vérifications
         assertNotNull(chambreReservee, "La chambre réservée ne doit pas être nulle");
         assertEquals(type, chambreReservee.getTypeC(), "Le type de la chambre doit correspondre");
